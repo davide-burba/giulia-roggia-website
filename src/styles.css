@@ -1,0 +1,16 @@
+.TextSection {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.TextSection a{
+  color: rgb(189, 216, 247);
+}
+
+
+.EntryImage {
+  padding: 110px;
+  margin-bottom: -10rem;
+  max-width: 30rem;
+}
