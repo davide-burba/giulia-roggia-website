@@ -18,6 +18,12 @@
 .env.test.local
 .env.production.local
 
+# media
+*.jpg
+*.png
+*.svg
+*.ico
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
