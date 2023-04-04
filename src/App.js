@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div ><img className='EntryImage' src="/images/profile.jpg"/></div>
+      <div ><img className='EntryImage' src="/images/profile-min.jpg"/></div>
       <div id="about" className="App-section"><About /></div>
       <hr />
       <div id="portfolio" className="App-section"><PortfolioPage /></div>
