@@ -1,37 +1,50 @@
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
 }
-  
-.image-grid-item {
+
+@media screen and (max-width: 400px) {
+.image-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media screen and (min-width: 1000px) {
+.image-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+}
+
+.image-block {
     position: relative;
     cursor: pointer;
+    padding-bottom: 100%; /* To create a square aspect ratio */
+    width: 100%; /* To create a square aspect ratio */
 }
-  
-.image-item:hover .image-caption {
-    opacity: 1;
-}
-  
-.image-item img {
+
+.image-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: block;
-    width: 80%;
-    height: auto;
-    object-fit: contain;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
 }
-  
+
 .image-caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-  
+
+.image-block:hover .image-item {
+    opacity: 0.2;
+}
+
+.image-block:hover .image-caption{
+    opacity: 1;
+}
