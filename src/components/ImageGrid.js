@@ -5,8 +5,9 @@ const ImageGrid = ({ images, onImageClick }) => {
   return (
     <div className="image-grid">
       {images.map((image, index) => (
-        <div key={index} className="image-item" onClick={() => onImageClick(index)}>
-          <img src={image.path} alt={image.caption} />
+        <div key={index} className="image-block" onClick={() => onImageClick(index)}>
+          <img src={image.path} className="image-item" />
+          <figcaption className="image-caption">{image.caption}</figcaption>
         </div>
       ))}
     </div>

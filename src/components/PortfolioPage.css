@@ -1,12 +1,7 @@
 .portfolio-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
   
-  .portfolio-page h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
   

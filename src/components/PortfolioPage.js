@@ -48,7 +48,7 @@ const PortfolioPage = () => {
 
   return (
     <div className='portfolio-page'>
-      <h1>Portfolio</h1>
+    <h2>Portfolio</h2>  
       <ImageGrid images={images} onImageClick={handleImageClick} />
       {modalVisible && selectedImageIndex !== null && (
         <ImageModal
