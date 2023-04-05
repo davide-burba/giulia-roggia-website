@@ -62,3 +62,7 @@ Header a:hover {
     }
   }
   
+.logo {
+    display: inline-block;
+    height: 50px;
+}
